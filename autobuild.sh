@@ -27,6 +27,7 @@ SIGNED_OUT_DIR="${IPA_LOC}/signed"
 
 # start
 rm -rf "${IPA_LOC}"
+mkdir -p "${BUILD_DERIVED_DATA_DIR}"
 
 BUILD_SCRIPT_DIR=`pwd`
 
@@ -36,7 +37,7 @@ cd ${PROJ_DIR}
 #xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
 #xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME} -xcconfig build-dir.xcconfig
 
-xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
+#xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
 xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME}
 
 cp "${BUILD_SCRIPT_DIR}/appstore.plist" ${IPA_LOC}
