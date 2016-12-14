@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64D88B101E00E64200EABEB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B0F1E00E64200EABEB9 /* main.m */; };
+		64D88B131E00E64200EABEB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B121E00E64200EABEB9 /* AppDelegate.m */; };
+		64D88B151E00E64200EABEB9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B141E00E64200EABEB9 /* Shader.fsh */; };
+		64D88B171E00E64200EABEB9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B161E00E64200EABEB9 /* Shader.vsh */; };
+		64D88B1A1E00E64200EABEB9 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B191E00E64200EABEB9 /* GameViewController.m */; };
+		64D88B1D1E00E64200EABEB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B1B1E00E64200EABEB9 /* Main.storyboard */; };
+		64D88B1F1E00E64200EABEB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B1E1E00E64200EABEB9 /* Assets.xcassets */; };
+		64D88B221E00E64200EABEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B201E00E64200EABEB9 /* LaunchScreen.storyboard */; };
+		64D88B2D1E00E64300EABEB9 /* casinodeluxebyiggTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B2C1E00E64300EABEB9 /* casinodeluxebyiggTests.m */; };
+		64D88B381E00E64300EABEB9 /* casinodeluxebyiggUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B371E00E64300EABEB9 /* casinodeluxebyiggUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64D88B291E00E64300EABEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D88B031E00E64200EABEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D88B0A1E00E64200EABEB9;
+			remoteInfo = casinodeluxebyigg;
+		};
+		64D88B341E00E64300EABEB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64D88B031E00E64200EABEB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64D88B0A1E00E64200EABEB9;
+			remoteInfo = casinodeluxebyigg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64D88B0B1E00E64200EABEB9 /* casinodeluxebyigg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = casinodeluxebyigg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D88B0F1E00E64200EABEB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64D88B111E00E64200EABEB9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64D88B121E00E64200EABEB9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64D88B141E00E64200EABEB9 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		64D88B161E00E64200EABEB9 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		64D88B181E00E64200EABEB9 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		64D88B191E00E64200EABEB9 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		64D88B1C1E00E64200EABEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64D88B1E1E00E64200EABEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64D88B211E00E64200EABEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64D88B231E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D88B281E00E64300EABEB9 /* casinodeluxebyiggTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = casinodeluxebyiggTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D88B2C1E00E64300EABEB9 /* casinodeluxebyiggTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = casinodeluxebyiggTests.m; sourceTree = "<group>"; };
+		64D88B2E1E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D88B331E00E64300EABEB9 /* casinodeluxebyiggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = casinodeluxebyiggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D88B371E00E64300EABEB9 /* casinodeluxebyiggUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = casinodeluxebyiggUITests.m; sourceTree = "<group>"; };
+		64D88B391E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64D88B081E00E64200EABEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B251E00E64300EABEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B301E00E64300EABEB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64D88B021E00E64200EABEB9 = {
+			isa = PBXGroup;
+			children = (
+				64D88B0D1E00E64200EABEB9 /* casinodeluxebyigg */,
+				64D88B2B1E00E64300EABEB9 /* casinodeluxebyiggTests */,
+				64D88B361E00E64300EABEB9 /* casinodeluxebyiggUITests */,
+				64D88B0C1E00E64200EABEB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64D88B0C1E00E64200EABEB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64D88B0B1E00E64200EABEB9 /* casinodeluxebyigg.app */,
+				64D88B281E00E64300EABEB9 /* casinodeluxebyiggTests.xctest */,
+				64D88B331E00E64300EABEB9 /* casinodeluxebyiggUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64D88B0D1E00E64200EABEB9 /* casinodeluxebyigg */ = {
+			isa = PBXGroup;
+			children = (
+				64D88B111E00E64200EABEB9 /* AppDelegate.h */,
+				64D88B121E00E64200EABEB9 /* AppDelegate.m */,
+				64D88B141E00E64200EABEB9 /* Shader.fsh */,
+				64D88B161E00E64200EABEB9 /* Shader.vsh */,
+				64D88B181E00E64200EABEB9 /* GameViewController.h */,
+				64D88B191E00E64200EABEB9 /* GameViewController.m */,
+				64D88B1B1E00E64200EABEB9 /* Main.storyboard */,
+				64D88B1E1E00E64200EABEB9 /* Assets.xcassets */,
+				64D88B201E00E64200EABEB9 /* LaunchScreen.storyboard */,
+				64D88B231E00E64300EABEB9 /* Info.plist */,
+				64D88B0E1E00E64200EABEB9 /* Supporting Files */,
+			);
+			path = casinodeluxebyigg;
+			sourceTree = "<group>";
+		};
+		64D88B0E1E00E64200EABEB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64D88B0F1E00E64200EABEB9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64D88B2B1E00E64300EABEB9 /* casinodeluxebyiggTests */ = {
+			isa = PBXGroup;
+			children = (
+				64D88B2C1E00E64300EABEB9 /* casinodeluxebyiggTests.m */,
+				64D88B2E1E00E64300EABEB9 /* Info.plist */,
+			);
+			path = casinodeluxebyiggTests;
+			sourceTree = "<group>";
+		};
+		64D88B361E00E64300EABEB9 /* casinodeluxebyiggUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64D88B371E00E64300EABEB9 /* casinodeluxebyiggUITests.m */,
+				64D88B391E00E64300EABEB9 /* Info.plist */,
+			);
+			path = casinodeluxebyiggUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64D88B0A1E00E64200EABEB9 /* casinodeluxebyigg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D88B3C1E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyigg" */;
+			buildPhases = (
+				64D88B071E00E64200EABEB9 /* Sources */,
+				64D88B081E00E64200EABEB9 /* Frameworks */,
+				64D88B091E00E64200EABEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = casinodeluxebyigg;
+			productName = casinodeluxebyigg;
+			productReference = 64D88B0B1E00E64200EABEB9 /* casinodeluxebyigg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64D88B271E00E64300EABEB9 /* casinodeluxebyiggTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D88B3F1E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyiggTests" */;
+			buildPhases = (
+				64D88B241E00E64300EABEB9 /* Sources */,
+				64D88B251E00E64300EABEB9 /* Frameworks */,
+				64D88B261E00E64300EABEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D88B2A1E00E64300EABEB9 /* PBXTargetDependency */,
+			);
+			name = casinodeluxebyiggTests;
+			productName = casinodeluxebyiggTests;
+			productReference = 64D88B281E00E64300EABEB9 /* casinodeluxebyiggTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64D88B321E00E64300EABEB9 /* casinodeluxebyiggUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64D88B421E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyiggUITests" */;
+			buildPhases = (
+				64D88B2F1E00E64300EABEB9 /* Sources */,
+				64D88B301E00E64300EABEB9 /* Frameworks */,
+				64D88B311E00E64300EABEB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64D88B351E00E64300EABEB9 /* PBXTargetDependency */,
+			);
+			name = casinodeluxebyiggUITests;
+			productName = casinodeluxebyiggUITests;
+			productReference = 64D88B331E00E64300EABEB9 /* casinodeluxebyiggUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64D88B031E00E64200EABEB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = bzbee;
+				TargetAttributes = {
+					64D88B0A1E00E64200EABEB9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QT4K5KS365;
+						ProvisioningStyle = Automatic;
+					};
+					64D88B271E00E64300EABEB9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QT4K5KS365;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64D88B0A1E00E64200EABEB9;
+					};
+					64D88B321E00E64300EABEB9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = QT4K5KS365;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64D88B0A1E00E64200EABEB9;
+					};
+				};
+			};
+			buildConfigurationList = 64D88B061E00E64200EABEB9 /* Build configuration list for PBXProject "casinodeluxebyigg" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64D88B021E00E64200EABEB9;
+			productRefGroup = 64D88B0C1E00E64200EABEB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64D88B0A1E00E64200EABEB9 /* casinodeluxebyigg */,
+				64D88B271E00E64300EABEB9 /* casinodeluxebyiggTests */,
+				64D88B321E00E64300EABEB9 /* casinodeluxebyiggUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64D88B091E00E64200EABEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D88B1D1E00E64200EABEB9 /* Main.storyboard in Resources */,
+				64D88B171E00E64200EABEB9 /* Shader.vsh in Resources */,
+				64D88B1F1E00E64200EABEB9 /* Assets.xcassets in Resources */,
+				64D88B221E00E64200EABEB9 /* LaunchScreen.storyboard in Resources */,
+				64D88B151E00E64200EABEB9 /* Shader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B261E00E64300EABEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B311E00E64300EABEB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64D88B071E00E64200EABEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D88B131E00E64200EABEB9 /* AppDelegate.m in Sources */,
+				64D88B1A1E00E64200EABEB9 /* GameViewController.m in Sources */,
+				64D88B101E00E64200EABEB9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B241E00E64300EABEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D88B2D1E00E64300EABEB9 /* casinodeluxebyiggTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64D88B2F1E00E64300EABEB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64D88B381E00E64300EABEB9 /* casinodeluxebyiggUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64D88B2A1E00E64300EABEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D88B0A1E00E64200EABEB9 /* casinodeluxebyigg */;
+			targetProxy = 64D88B291E00E64300EABEB9 /* PBXContainerItemProxy */;
+		};
+		64D88B351E00E64300EABEB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64D88B0A1E00E64200EABEB9 /* casinodeluxebyigg */;
+			targetProxy = 64D88B341E00E64300EABEB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64D88B1B1E00E64200EABEB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D88B1C1E00E64200EABEB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64D88B201E00E64200EABEB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D88B211E00E64200EABEB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64D88B3A1E00E64300EABEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64D88B3B1E00E64300EABEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64D88B3D1E00E64300EABEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyigg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyigg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64D88B3E1E00E64300EABEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyigg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyigg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		64D88B401E00E64300EABEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyiggTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyiggTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/casinodeluxebyigg.app/casinodeluxebyigg";
+			};
+			name = Debug;
+		};
+		64D88B411E00E64300EABEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyiggTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyiggTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/casinodeluxebyigg.app/casinodeluxebyigg";
+			};
+			name = Release;
+		};
+		64D88B431E00E64300EABEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyiggUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyiggUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = casinodeluxebyigg;
+			};
+			name = Debug;
+		};
+		64D88B441E00E64300EABEB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = QT4K5KS365;
+				INFOPLIST_FILE = casinodeluxebyiggUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyiggUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = casinodeluxebyigg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64D88B061E00E64200EABEB9 /* Build configuration list for PBXProject "casinodeluxebyigg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D88B3A1E00E64300EABEB9 /* Debug */,
+				64D88B3B1E00E64300EABEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64D88B3C1E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyigg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D88B3D1E00E64300EABEB9 /* Debug */,
+				64D88B3E1E00E64300EABEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64D88B3F1E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyiggTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D88B401E00E64300EABEB9 /* Debug */,
+				64D88B411E00E64300EABEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64D88B421E00E64300EABEB9 /* Build configuration list for PBXNativeTarget "casinodeluxebyiggUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64D88B431E00E64300EABEB9 /* Debug */,
+				64D88B441E00E64300EABEB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64D88B031E00E64200EABEB9 /* Project object */;
+}
