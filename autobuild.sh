@@ -1,13 +1,18 @@
 # variables
-PROJ_DIR="./targetproject/casinodeluxebyigg"
+#PROJ_DIR="./targetproject/casinodeluxebyigg"
+PROJ_DIR="/Development/project/casino/client/examples/SlotMachine/proj.ios"
 
 # archive variables
-PROJ_NAME=casinodeluxebyigg
-SCHEME_NAME=casinodeluxebyigg
+#PROJ_NAME=casinodeluxebyigg
+#SCHEME_NAME=casinodeluxebyigg
+PROJ_NAME=CasinoByIGG
+SCHEME_NAME=CasinoByIGG
 
 # ipa variables
-APP_NAME=casinodeluxebyigg.app
-IPA_NAME=casinodeluxebyigg.ipa
+#APP_NAME=casinodeluxebyigg.app
+#IPA_NAME=casinodeluxebyigg.ipa
+APP_NAME=CasinoByIGG.app
+IPA_NAME=CasinoByIGG.ipa
 
 IPA_LOC="/Development/project/build-dir"
 
