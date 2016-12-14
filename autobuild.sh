@@ -2,10 +2,6 @@
 PROJ_DIR="./targetproject/casinodeluxebyigg"
 CONFIGURATION=Release
 
-# temp build directory
-BUILD_TEMP_DIR="/Development/project/build-dir/build"
-BUILD_DERIVED_DATA_DIR="/Development/project/build-dir/build/DerivedData"
-
 # archive variables
 PROJ_NAME=casinodeluxebyigg
 SCHEME_NAME=casinodeluxebyigg
@@ -17,6 +13,10 @@ IPA_NAME=casinodeluxebyigg.ipa
 #DEVELOPER_NAME="casino bzbee igg (QSKC8ABWRD)"
 DEVELOPER_NAME="IGG.COM (QT4K5KS365)"
 PROVISION_PROFILE="./provisioning/CD_Dis.mobileprovision"
+
+# temp build directory
+BUILD_TEMP_DIR="${IPA_LOC}/build"
+BUILD_DERIVED_DATA_DIR="${BUILD_TEMP_DIR}/DerivedData"
 
 # archive folder
 ARCH_XCODE_FOLDER=~/Library/Developer/Xcode/Archives
