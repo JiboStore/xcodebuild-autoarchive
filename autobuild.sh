@@ -61,3 +61,7 @@ xcodebuild -exportArchive -archivePath "${LATEST_FILE}" -exportOptionsPlist ${EX
 #xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME}
 
 #xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME} -xcconfig build-dir.xcconfig -derivedDataPath ${BUILD_DERIVED_DATA_DIR}
+
+# upload to testflight
+cd "${SIGNED_OUT_DIR}"
+deliver --ipa "${PROJ_NAME}.ipa" --username casino.bzbee@igg.com --force
