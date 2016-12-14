@@ -1,6 +1,5 @@
 # variables
 PROJ_DIR="./targetproject/casinodeluxebyigg"
-CONFIGURATION=Release
 
 # archive variables
 PROJ_NAME=casinodeluxebyigg
@@ -8,8 +7,10 @@ SCHEME_NAME=casinodeluxebyigg
 
 # ipa variables
 APP_NAME=casinodeluxebyigg.app
-IPA_LOC="/Development/project/build-dir"
 IPA_NAME=casinodeluxebyigg.ipa
+
+IPA_LOC="/Development/project/build-dir"
+
 #DEVELOPER_NAME="casino bzbee igg (QSKC8ABWRD)"
 DEVELOPER_NAME="IGG.COM (QT4K5KS365)"
 PROVISION_PROFILE="./provisioning/CD_Dis.mobileprovision"
@@ -24,6 +25,8 @@ ARCH_DATE_FOLDER=`date '+%Y-%m-%d'`
 
 EXPORT_PLIST=appstore.plist
 SIGNED_OUT_DIR="${IPA_LOC}/signed"
+
+CONFIGURATION=Release
 
 # start
 rm -rf "${IPA_LOC}"
