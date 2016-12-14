@@ -14,8 +14,9 @@ SCHEME_NAME=casinodeluxebyigg
 APP_NAME=casinodeluxebyigg.app
 IPA_LOC="/Development/project/build-dir"
 IPA_NAME=casinodeluxebyigg.ipa
-DEVELOPER_NAME="casino bzbee igg (QSKC8ABWRD)"
-PROVISION_PROFILE="./provisioning/CD_Dev.mobileprovision"
+#DEVELOPER_NAME="casino bzbee igg (QSKC8ABWRD)"
+DEVELOPER_NAME="IGG.COM (QT4K5KS365)"
+PROVISION_PROFILE="./provisioning/CD_Dis.mobileprovision"
 
 # archive folder
 ARCH_XCODE_FOLDER=~/Library/Developer/Xcode/Archives
@@ -32,8 +33,11 @@ BUILD_SCRIPT_DIR=`pwd`
 echo "${BUILD_SCRIPT_DIR}"
 
 cd ${PROJ_DIR}
+#xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
+#xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME} -xcconfig build-dir.xcconfig
+
 xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
-xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME} -xcconfig build-dir.xcconfig
+xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME}
 
 cp "${BUILD_SCRIPT_DIR}/appstore.plist" ${IPA_LOC}
 
