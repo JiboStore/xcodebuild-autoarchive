@@ -38,6 +38,8 @@ PLIST_FILE="${PROJ_DIR}/Info.plist"
 PLIST_BUDDY_EXE="/usr/libexec/PlistBuddy"
 PLIST_CMD_UPDATE_BUNDLE_VER="Set :CFBundleVersion $(git rev-list --all | wc -l)"
 #PLIST_CMD_UPDATE_BUNDLE_VER="Set :CFBundleVersion $(git svn find-rev $(git rev-parse master))" # casino
+PLIST_CMD_UPDATE_BUILD_REV="Set :IGGBuildRev $(git rev-parse --short HEAD)"
 echo -n "${PLIST_FILE}" | xargs -0 "${PLIST_BUDDY_EXE}" -c "${PLIST_CMD_UPDATE_BUNDLE_VER}"
+echo -n "${PLIST_FILE}" | xargs -0 "${PLIST_BUDDY_EXE}" -c "${PLIST_CMD_UPDATE_BUILD_REV}"
 
 # start
