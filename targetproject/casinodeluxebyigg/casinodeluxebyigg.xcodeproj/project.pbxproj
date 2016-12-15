@@ -17,6 +17,7 @@
 		64D88B221E00E64200EABEB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D88B201E00E64200EABEB9 /* LaunchScreen.storyboard */; };
 		64D88B2D1E00E64300EABEB9 /* casinodeluxebyiggTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B2C1E00E64300EABEB9 /* casinodeluxebyiggTests.m */; };
 		64D88B381E00E64300EABEB9 /* casinodeluxebyiggUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D88B371E00E64300EABEB9 /* casinodeluxebyiggUITests.m */; };
+		8B391E731E026316009FA89C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B391E721E026316009FA89C /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,13 +49,13 @@
 		64D88B1C1E00E64200EABEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64D88B1E1E00E64200EABEB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64D88B211E00E64200EABEB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		64D88B231E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D88B281E00E64300EABEB9 /* casinodeluxebyiggTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = casinodeluxebyiggTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D88B2C1E00E64300EABEB9 /* casinodeluxebyiggTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = casinodeluxebyiggTests.m; sourceTree = "<group>"; };
 		64D88B2E1E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64D88B331E00E64300EABEB9 /* casinodeluxebyiggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = casinodeluxebyiggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D88B371E00E64300EABEB9 /* casinodeluxebyiggUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = casinodeluxebyiggUITests.m; sourceTree = "<group>"; };
 		64D88B391E00E64300EABEB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B391E721E026316009FA89C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		64D88B0D1E00E64200EABEB9 /* casinodeluxebyigg */ = {
 			isa = PBXGroup;
 			children = (
+				8B391E721E026316009FA89C /* Info.plist */,
 				64D88B111E00E64200EABEB9 /* AppDelegate.h */,
 				64D88B121E00E64200EABEB9 /* AppDelegate.m */,
 				64D88B141E00E64200EABEB9 /* Shader.fsh */,
@@ -114,7 +116,6 @@
 				64D88B1B1E00E64200EABEB9 /* Main.storyboard */,
 				64D88B1E1E00E64200EABEB9 /* Assets.xcassets */,
 				64D88B201E00E64200EABEB9 /* LaunchScreen.storyboard */,
-				64D88B231E00E64300EABEB9 /* Info.plist */,
 				64D88B0E1E00E64200EABEB9 /* Supporting Files */,
 			);
 			path = casinodeluxebyigg;
@@ -257,6 +258,7 @@
 			files = (
 				64D88B1D1E00E64200EABEB9 /* Main.storyboard in Resources */,
 				64D88B171E00E64200EABEB9 /* Shader.vsh in Resources */,
+				8B391E731E026316009FA89C /* Info.plist in Resources */,
 				64D88B1F1E00E64200EABEB9 /* Assets.xcassets in Resources */,
 				64D88B221E00E64200EABEB9 /* LaunchScreen.storyboard in Resources */,
 				64D88B151E00E64200EABEB9 /* Shader.fsh in Resources */,
@@ -439,7 +441,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: IGG.COM (QT4K5KS365)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IGG.COM (QT4K5KS365)";
 				DEVELOPMENT_TEAM = QT4K5KS365;
-				INFOPLIST_FILE = casinodeluxebyigg/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyigg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +458,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: IGG.COM (QT4K5KS365)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IGG.COM (QT4K5KS365)";
 				DEVELOPMENT_TEAM = QT4K5KS365;
-				INFOPLIST_FILE = casinodeluxebyigg/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.igg.ios.casinodeluxebyigg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
