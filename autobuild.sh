@@ -1,18 +1,18 @@
 # variables
 PROJ_DIR="./targetproject/casinodeluxebyigg"
-##PROJ_DIR="/Development/project/casino/client/examples/SlotMachine/proj.ios"
+##PROJ_DIR="/Development/project/casino/client/examples/SlotMachine/proj.ios" # casino
 
 # archive variables
 PROJ_NAME=casinodeluxebyigg
 SCHEME_NAME=casinodeluxebyigg
-#PROJ_NAME=CasinoByIGG
-#SCHEME_NAME=CasinoByIGG
+#PROJ_NAME=CasinoByIGG # casino
+#SCHEME_NAME=CasinoByIGG # casino
 
 # ipa variables
 APP_NAME=casinodeluxebyigg.app
 IPA_NAME=casinodeluxebyigg.ipa
-##APP_NAME=CasinoByIGG.app
-##IPA_NAME=CasinoByIGG.ipa
+##APP_NAME=CasinoByIGG.app # casino
+##IPA_NAME=CasinoByIGG.ipa # casino
 
 IPA_LOC="/Development/project/build-dir"
 
@@ -41,7 +41,18 @@ BUILD_SCRIPT_DIR=`pwd`
 
 echo "${BUILD_SCRIPT_DIR}"
 
+# update info.plist
+PLIST_FILE="${PROJ_DIR}/Info.plist"
+PLIST_BUDDY_EXE="/usr/libexec/PlistBuddy"
+PLIST_CMD_UPDATE_BUNDLE_VER="Set :CFBundleVersion $(git rev-list --all | wc -l)"
+#PLIST_CMD_UPDATE_BUNDLE_VER="Set :CFBundleVersion $(git svn find-rev $(git rev-parse master))" # casino
+PLIST_CMD_UPDATE_BUILD_REV="Set :IGGBuildRev $(git rev-parse --short HEAD)"
+echo -n "${PLIST_FILE}" | xargs -0 "${PLIST_BUDDY_EXE}" -c "${PLIST_CMD_UPDATE_BUNDLE_VER}"
+echo -n "${PLIST_FILE}" | xargs -0 "${PLIST_BUDDY_EXE}" -c "${PLIST_CMD_UPDATE_BUILD_REV}"
+
+# start building
 cd ${PROJ_DIR}
+
 #xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
 #xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME} -xcconfig build-dir.xcconfig
 
