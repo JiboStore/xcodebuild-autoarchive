@@ -1,0 +1,9 @@
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - ./autobuild.sh
+  tags:
+    - ios
