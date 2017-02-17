@@ -59,6 +59,14 @@ cd ${PROJ_DIR}
 #xcodebuild -target ${PROJ_NAME} -sdk iphoneos -configuration ${CONFIGURATION} -xcconfig build-dir.xcconfig
 xcodebuild archive -project "${PROJ_NAME}.xcodeproj" -scheme ${SCHEME_NAME}
 
+# test deprecated way to check performance, but unable to archive
+#xcodebuild -project casinodeluxebyigg.xcodeproj -target casinodeluxebyigg -configuration Release -sdk iphoneos
+#xcrun -sdk iphoneos PackageApplication -v build/Release-iphoneos/casinodeluxebyigg.app -o casinoigg.ipa --sign "IGG.COM (QT4K5KS365)" --embed "/Development/project/xcodebuild/provisioning/CD_Dis.mobileprovision"
+#xcodebuild -exportArchive -archivePath "./targetproject/casinodeluxebyigg/build/Release-iphoneos/casinodeluxebyigg.app" -exportOptionsPlist "./appstore.plist" -exportPath casinoigg.ipa
+#xcodebuild -exportArchive -archivePath "./targetproject/casinodeluxebyigg/build/Release-iphoneos/casinodeluxebyigg.app" -exportOptionsPlist "./appstore.plist" -exportPath casinoigg.ipa
+#xcodebuild -project "./targetproject/casinodeluxebyigg/casinodeluxebyigg.xcodeproj" -target casinodeluxebyigg -configuration Release -sdk iphoneos
+#xcodebuild -exportArchive -archivePath "./targetproject/casinodeluxebyigg/build/Release-iphoneos/casinodeluxebyigg.app" -exportOptionsPlist "./appstore.plist" -exportPath casinoigg.ipa
+
 cp "${BUILD_SCRIPT_DIR}/appstore.plist" ${IPA_LOC}
 
 cd ${ARCH_XCODE_FOLDER}
